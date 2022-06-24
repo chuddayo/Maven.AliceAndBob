@@ -11,6 +11,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         userName = in.next(); // only gets first word
 
+        // This line sets their first initial to capital and the rest lowercase
         userName = userName.substring(0, 1).toUpperCase() + userName.substring(1).toLowerCase();
         if (userName.toLowerCase().equals("alice") || userName.toLowerCase().equals("bob")) {
             System.out.println("Howdy " + userName + ". Good to see you again.");
